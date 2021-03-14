@@ -30,5 +30,10 @@ namespace Business.Concrete
             //Bir iş sınıfı başka sınıfları NEWLEMEZ.
             return _productDal.GetAll();
         }
+
+        public List<Product> GetAllByCategoryId(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
