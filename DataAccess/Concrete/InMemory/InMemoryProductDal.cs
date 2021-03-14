@@ -14,11 +14,11 @@ namespace DataAccess.Concrete.InMemory
         public InMemoryProductDal() //Bellekte InMemoryProductDal classı referans alındığında nesnesi oluştugunda çalışcak blok ctor bloğu (Class ile aynı isme sahip method)
         {
             _products = new List<Product> {
-                new Product{ProductId=1,CateogryId=1,ProductName="Bardak",UnitPrice=15, UnitsInStock=15},
-                new Product{ProductId=2,CateogryId=1,ProductName="Kamera",UnitPrice=500, UnitsInStock=3},
-                new Product{ProductId=3,CateogryId=2,ProductName="Telefon",UnitPrice=1500, UnitsInStock=2},
-                new Product{ProductId=4,CateogryId=2,ProductName="Klavye",UnitPrice=150, UnitsInStock=65},
-                new Product{ProductId=5,CateogryId=2,ProductName="Fare",UnitPrice=85, UnitsInStock=1}
+                new Product{ProductId=1,CategoryId=1,ProductName="Bardak",UnitPrice=15, UnitsInStock=15},
+                new Product{ProductId=2,CategoryId=1,ProductName="Kamera",UnitPrice=500, UnitsInStock=3},
+                new Product{ProductId=3,CategoryId=2,ProductName="Telefon",UnitPrice=1500, UnitsInStock=2},
+                new Product{ProductId=4,CategoryId=2,ProductName="Klavye",UnitPrice=150, UnitsInStock=65},
+                new Product{ProductId=5,CategoryId=2,ProductName="Fare",UnitPrice=85, UnitsInStock=1}
             };
         }
         public void Add(Product product)
