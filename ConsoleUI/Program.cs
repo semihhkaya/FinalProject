@@ -5,7 +5,7 @@ using System;
 
 namespace ConsoleUI
 {
-    //SOLID (O HARFİ) -OPEN CLOSED PRINCIBLE-
+    //SOLID (O HARFİ) -OPEN CLOSED PRINCIBLE- Ar-Ge
     class Program
     {
         static void Main(string[] args)
