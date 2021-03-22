@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Abstract
+namespace Core.Entities
 {
     //IEntity interface'ini implement eden class'lar bir veri tabanı tablosudur. Entity = Varlık
     public interface IEntity

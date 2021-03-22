@@ -14,7 +14,7 @@ namespace DataAccess.Concrete.EntityFramework
     {
         public void Add(Product entity)
         {
-            //Referansı Yakalama
+            //Referansı Yakalama işlemi
             //IDısposable pattern Implemention of c#
             using (NorthwindContext context = new NorthwindContext())
             {

@@ -54,7 +54,7 @@ namespace DataAccess.Concrete.InMemory
 
         public List<Product> GetAllByCategory(int categoryId)
         {
-            return _products.Where(p => p.CateogryId == categoryId).ToList();
+            return _products.Where(p => p.CategoryId == categoryId).ToList();
         }
 
         public void Update(Product product)
@@ -63,7 +63,7 @@ namespace DataAccess.Concrete.InMemory
             Product productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
             
             productToUpdate.ProductName = product.ProductName;
-            productToUpdate.CateogryId = product.CateogryId;
+            productToUpdate.CategoryId = product.CategoryId;
             productToUpdate.UnitPrice = product.UnitPrice;
             productToUpdate.UnitsInStock = product.UnitsInStock;
 
