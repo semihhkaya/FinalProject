@@ -2,10 +2,8 @@
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using System;
-
 namespace ConsoleUI
 {
-    //SOLID (O HARFİ) -OPEN CLOSED PRINCIBLE- Ar-Ge /// //IoC Container
     class Program
     {
         static void Main(string[] args)
@@ -27,9 +25,18 @@ namespace ConsoleUI
         {
             ProductManager productManager = new ProductManager(new EfProductDal());
 
-            foreach (var product in productManager.GetProductDetails())
+            var result = productManager.GetProductDetails();
+            
+            if (result.Success==true)
             {
-                Console.WriteLine(product.ProductName + "/ " + product.CategoryName);
+                foreach (var product in result.Data)
+                {
+                    Console.WriteLine(product.ProductName + "/ " + product.CategoryName);
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
             }
         }
     }
