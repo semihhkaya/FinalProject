@@ -7,9 +7,9 @@ namespace Core.Utilities.Results
     public class DataResult<T> : Result, IDataResult<T>
     {//Base= resulta göndermek demek
         //hem olumlu-olumsuz hem de bir mesaj gönderir.
-        public DataResult(T data, bool success, string message) : base(success, message)
+        public DataResult(T data, bool success, string message) : base(success,message)
         {
-            Data = data;
+            Data = data; // IDATARESULT'DAKİ DATA'YI CTOR İLE SET ETTİM
         }
 
         public DataResult(T data, bool success):base(success) //sadece Olumlu veya olumsuz döndürür
