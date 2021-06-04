@@ -32,8 +32,8 @@ namespace WebAPI
         //Autofact, Ninject, CastleWindsor, StructreMap, LightInject, DryInject --> IoC Container mimarisi sunan altyapýlar
         //AOP
             services.AddControllers();
-            services.AddSingleton<IProductService,ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
+            //services.AddSingleton<IProductService,ProductManager>();
+            //services.AddSingleton<IProductDal, EfProductDal>();
         //IProductService tipinde baðýmlýlýk görülürse ProductManager newlenir
         }
 
